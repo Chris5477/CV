@@ -1,0 +1,5 @@
+@mixin flexbox($mainAxis, $secondaryAxis) {
+	display: flex;
+	justify-content: $mainAxis;
+	align-items: $secondaryAxis;
+}

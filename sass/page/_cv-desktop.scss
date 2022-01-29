@@ -1,0 +1,71 @@
+/* Global CSS ********************************************************************************************************/
+
+#container {
+	background-color: white;
+	width: 65%;
+	height: 100vh;
+	margin: auto;
+	@include flexbox(space-between, flex-start);
+	flex-direction: row-reverse;
+}
+
+.main-aside {
+	width: 25%;
+	height: 100vh;
+	background-color: $aside-color;
+	color: white;
+	@include flexbox(space-evenly, center);
+	flex-direction: column;
+}
+
+.main-article {
+	width: 75%;
+	height: 100vh;
+}
+
+/* Header CSS ************************************************************************************************************/
+
+header {
+	@include flexbox(space-around, center);
+	height: 25vh;
+}
+
+.identity {
+	width: 65%;
+	padding-left: 25px;
+}
+
+.contact-details {
+	width: 35%;
+}
+
+/* Section Formation CSS *******************************************************************************************************/
+.section-formation,
+.section-experience {
+	width: 95%;
+	height: auto;
+	margin: auto;
+	padding: 20px;
+}
+
+.formation,
+.experience {
+	@include flexbox(space-around, center);
+}
+
+/* Aside CSS **********************************************************************************************************************/
+
+.picture {
+	@include flexbox(center, center);
+	width: 100%;
+}
+
+img {
+	width: 70%;
+	border-radius: 50%;
+	border: 2px solid white;
+}
+
+.aside-section {
+	padding: 10px 30px;
+}
