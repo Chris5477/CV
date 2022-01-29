@@ -1,14 +1,5 @@
 /* Global CSS ********************************************************************************************************/
 
-#container {
-	background-color: white;
-	width: 65%;
-	height: 100vh;
-	margin: auto;
-	@include flexbox(space-between, flex-start);
-	flex-direction: row-reverse;
-}
-
 .main-aside {
 	width: 25%;
 	height: 100vh;
@@ -27,16 +18,37 @@
 
 header {
 	@include flexbox(space-around, center);
-	height: 25vh;
+	height: 23vh;
 }
 
 .identity {
-	width: 65%;
-	padding-left: 25px;
+	width: 60%;
+	padding-left: 50px;
+}
+
+.title-name {
+	font-size: 55px;
+}
+
+.target-job {
+	font-size: 22px;
+	font-weight: bold;
+	padding-top: 10px;
 }
 
 .contact-details {
-	width: 35%;
+	width: 40%;
+}
+
+.contact-details li {
+	padding: 5px 10px;
+	font-size: 20px;
+}
+
+li span {
+	width: 24px;
+	height: 24px;
+	transform: translate(-10px);
 }
 
 /* Section Formation CSS *******************************************************************************************************/
@@ -45,14 +57,40 @@ header {
 	width: 95%;
 	height: auto;
 	margin: auto;
-	padding: 20px;
+	padding: 0 20px 20px 20px;
+	margin-top: 30px;
+	border-top: 3px solid black;
+}
+
+.head-section {
+	background-color: white;
+	font-size: 40px;
+	display: inline-block;
+	padding: 0 15px;
+	transform: translateY(-30px);
 }
 
 .formation,
 .experience {
-	@include flexbox(space-around, center);
+	@include flexbox(space-around, flex-start);
+	padding-top: 25px;
 }
 
+.label {
+	width: 35%;
+}
+
+h3 {
+	padding-top: 10px;
+	font-size: 20px;
+}
+
+.content-label {
+	width: 65%;
+	font-size: 20px;
+	border-left: 2px solid black;
+	padding-left: 25px;
+}
 /* Aside CSS **********************************************************************************************************************/
 
 .picture {
