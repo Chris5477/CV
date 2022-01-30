@@ -5,8 +5,9 @@
 	height: 100vh;
 	background-color: $aside-color;
 	color: white;
-	@include flexbox(space-evenly, center);
+	@include flexbox(space-between, flex-start);
 	flex-direction: column;
+	padding: 40px 0;
 }
 
 .main-article {
@@ -41,7 +42,7 @@ header {
 }
 
 .contact-details li {
-	padding: 5px 10px;
+	padding: 5px 0;
 	font-size: 20px;
 }
 
@@ -59,7 +60,7 @@ li span {
 	margin: auto;
 	padding: 0 20px 20px 20px;
 	margin-top: 30px;
-	border-top: 3px solid black;
+	border-top: 1px solid black;
 }
 
 .head-section {
@@ -88,9 +89,11 @@ h3 {
 .content-label {
 	width: 65%;
 	font-size: 20px;
-	border-left: 2px solid black;
+	border-left: 1px solid black;
 	padding-left: 25px;
+	min-height: 90px;
 }
+
 /* Aside CSS **********************************************************************************************************************/
 
 .picture {
@@ -99,11 +102,29 @@ h3 {
 }
 
 img {
-	width: 70%;
+	width: 45%;
 	border-radius: 50%;
-	border: 2px solid white;
+	border: 5px solid white;
 }
 
 .aside-section {
 	padding: 10px 30px;
+}
+
+.description,
+.aside-section ul li {
+	font-size: 20px;
+	font-weight: bold;
+	padding-bottom: 10px;
+}
+
+.aside-section ul li::before {
+	content: "-";
+	margin-right: 10px;
+}
+
+.title-description {
+	margin-bottom: 10px;
+	font-size: 25px;
+	color: $subtitle-color;
 }
