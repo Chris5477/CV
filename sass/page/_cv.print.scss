@@ -76,4 +76,21 @@
 	img {
 		width: 55%;
 	}
+
+	a {
+		padding-bottom: 10px;
+		display: block;
+	}
+
+	.linkedin::after {
+		content: ": https://www.linkedin.com/in/christopher-petitcolas-46410b1a9";
+	}
+
+	.github::after {
+		content: ": https://github.com/Chris5477";
+	}
+
+	.twitter::after {
+		content: ": https://twitter.com/DevCP6";
+	}
 }

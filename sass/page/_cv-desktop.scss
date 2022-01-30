@@ -65,7 +65,7 @@ li span {
 
 .head-section {
 	background-color: white;
-	font-size: 40px;
+	font-size: 32px;
 	display: inline-block;
 	padding: 0 15px;
 	transform: translateY(-30px);
@@ -74,7 +74,7 @@ li span {
 .formation,
 .experience {
 	@include flexbox(space-around, flex-start);
-	padding-top: 25px;
+	padding-top: 15px;
 }
 
 .label {
@@ -113,18 +113,23 @@ img {
 
 .description,
 .aside-section ul li {
-	font-size: 20px;
+	font-size: 18px;
 	font-weight: bold;
-	padding-bottom: 10px;
+	padding-bottom: 5px;
 }
 
-.aside-section ul li::before {
+.aside-section ul li span {
+	padding-left: 10px;
+	margin-right: 5px;
+}
+
+.aside-section:nth-child(4) ul li::before {
 	content: "-";
 	margin-right: 10px;
 }
 
 .title-description {
 	margin-bottom: 10px;
-	font-size: 25px;
+	font-size: 22px;
 	color: $subtitle-color;
 }

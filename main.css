@@ -17,6 +17,7 @@ body {
 
 a {
   text-decoration: none;
+  color: white;
 }
 
 li {
@@ -117,7 +118,7 @@ li span {
 
 .head-section {
   background-color: white;
-  font-size: 40px;
+  font-size: 32px;
   display: inline-block;
   padding: 0 15px;
   transform: translateY(-30px);
@@ -128,7 +129,7 @@ li span {
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
-  padding-top: 25px;
+  padding-top: 15px;
 }
 
 .label {
@@ -168,19 +169,24 @@ img {
 
 .description,
 .aside-section ul li {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
 }
 
-.aside-section ul li::before {
+.aside-section ul li span {
+  padding-left: 10px;
+  margin-right: 5px;
+}
+
+.aside-section:nth-child(4) ul li::before {
   content: "-";
   margin-right: 10px;
 }
 
 .title-description {
   margin-bottom: 10px;
-  font-size: 25px;
+  font-size: 22px;
   color: #53a2be;
 }
 
@@ -275,16 +281,20 @@ img {
   }
 
   /* Aside CSS **********************************************************************************************************************/
-  img {
+  .picture {
+    display: inline-block;
     position: absolute;
     top: 0%;
     left: 0%;
+  }
+
+  img {
     width: 25%;
   }
 
-  .description {
+  .mobile-position {
     position: absolute;
-    top: 20%;
+    top: 18%;
     left: 2%;
     color: #0a2239;
   }
@@ -312,21 +322,16 @@ img {
   }
 
   /* Global CSS ********************************************************************************************************/
-  .main-aside {
+  aside.main-aside {
     width: 100%;
     height: auto;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-direction: row;
+    flex-wrap: wrap;
     padding: 0;
-    order: 2;
   }
 
   .main-article {
     width: 100%;
     height: auto;
-    order: 1;
   }
 
   /* Header CSS ************************************************************************************************************/
@@ -373,7 +378,7 @@ img {
 
   .head-section {
     font-size: 25px;
-    transform: translateY(-10px);
+    transform: translateY(-15px);
   }
 
   .formation,
@@ -402,20 +407,25 @@ img {
   }
 
   /* Aside CSS **********************************************************************************************************************/
-  img {
+  .picture {
     top: 1%;
     left: 2%;
+  }
+
+  img {
     width: 20%;
   }
 
-  .description {
-    top: 12%;
-    left: 2%;
-    color: #0a2239;
+  section.aside-section {
+    width: 33%;
+    height: 182px;
   }
 
-  .aside-section {
-    padding: 10px 10px;
+  section.mobile-position {
+    top: 11%;
+    left: 2%;
+    color: #0a2239;
+    width: 100%;
   }
 
   .description,
@@ -502,6 +512,23 @@ img {
 
   img {
     width: 55%;
+  }
+
+  a {
+    padding-bottom: 10px;
+    display: block;
+  }
+
+  .linkedin::after {
+    content: ": https://www.linkedin.com/in/christopher-petitcolas-46410b1a9";
+  }
+
+  .github::after {
+    content: ": https://github.com/Chris5477";
+  }
+
+  .twitter::after {
+    content: ": https://twitter.com/DevCP6";
   }
 }
 
