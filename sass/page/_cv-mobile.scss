@@ -1,0 +1,233 @@
+@media screen and (max-width: 798px) {
+	body {
+		@include flexbox(flex-start, flex-start);
+		flex-direction: column;
+	}
+	/* Global CSS ********************************************************************************************************/
+
+	.main-aside {
+		width: 100%;
+		height: auto;
+		@include flexbox(flex-start, flex-start);
+		flex-direction: row;
+		padding: 0;
+		order: 2;
+	}
+
+	.main-article {
+		width: 100%;
+		height: auto;
+		order: 1;
+	}
+
+	/* Header CSS ************************************************************************************************************/
+
+	header {
+		width: 100%;
+		height: 28vh;
+		@include flexbox(space-around, flex-start);
+		padding-top: 5%;
+	}
+
+	.identity {
+		padding-left: 30%;
+	}
+
+	.title-name {
+		font-size: 24px;
+	}
+
+	.target-job {
+		font-size: 18px;
+	}
+
+	.contact-details li {
+		font-size: 14px;
+	}
+
+	/* Section Formation CSS *******************************************************************************************************/
+	.section-formation,
+	.section-experience {
+		width: 100%;
+		height: auto;
+		margin-top: 30px;
+	}
+
+	.head-section {
+		font-size: 25px;
+		transform: translateY(-10px);
+	}
+
+	.formation,
+	.experience {
+		@include flexbox(space-around, flex-start);
+		padding-top: 25px;
+	}
+
+	.label {
+		width: 35%;
+	}
+
+	h2 {
+		font-size: 18px;
+	}
+
+	h3 {
+		font-size: 16px;
+	}
+
+	.content-label {
+		font-size: 16px;
+		min-height: 90px;
+	}
+
+	/* Aside CSS **********************************************************************************************************************/
+
+	img {
+		position: absolute;
+		top: 0%;
+		left: 0%;
+		width: 25%;
+	}
+
+	.description {
+		position: absolute;
+		top: 20%;
+		left: 2%;
+		color: $aside-color;
+	}
+
+	.aside-section {
+		padding: 10px 10px;
+	}
+
+	.description,
+	.aside-section ul li {
+		font-size: 12px;
+	}
+
+	.title-description {
+		font-size: 12px;
+		color: $subtitle-color;
+	}
+}
+
+@media screen and (max-width: 650px) {
+	body {
+		@include flexbox(flex-start, flex-start);
+		flex-direction: column;
+	}
+	/* Global CSS ********************************************************************************************************/
+
+	.main-aside {
+		width: 100%;
+		height: auto;
+		@include flexbox(flex-start, flex-start);
+		flex-direction: row;
+		padding: 0;
+		order: 2;
+	}
+
+	.main-article {
+		width: 100%;
+		height: auto;
+		order: 1;
+	}
+
+	/* Header CSS ************************************************************************************************************/
+
+	header {
+		width: 100%;
+		height: 20vh;
+		@include flexbox(space-around, flex-start);
+		padding-top: 5%;
+	}
+
+	.identity {
+		padding-left: 25%;
+	}
+
+	.title-name {
+		font-size: 16px;
+	}
+
+	.target-job {
+		font-size: 14px;
+	}
+
+	.contact-details li {
+		font-size: 10px;
+		margin-left: 10px;
+		height: 25px;
+	}
+
+	li span {
+		margin: 0;
+		padding: 0;
+		width: 5px;
+	}
+
+	/* Section Formation CSS *******************************************************************************************************/
+	.section-formation,
+	.section-experience {
+		width: 100%;
+		height: auto;
+		margin-top: 30px;
+	}
+
+	.head-section {
+		font-size: 25px;
+		transform: translateY(-10px);
+	}
+
+	.formation,
+	.experience {
+		@include flexbox(space-around, flex-start);
+		padding-top: 25px;
+	}
+
+	.label {
+		width: 35%;
+	}
+
+	h2 {
+		font-size: 14px;
+	}
+
+	h3 {
+		font-size: 12px;
+	}
+
+	.content-label {
+		font-size: 12px;
+		min-height: 90px;
+	}
+
+	/* Aside CSS **********************************************************************************************************************/
+
+	img {
+		top: 1%;
+		left: 2%;
+		width: 20%;
+	}
+
+	.description {
+		top: 12%;
+		left: 2%;
+		color: $aside-color;
+	}
+
+	.aside-section {
+		padding: 10px 10px;
+	}
+
+	.description,
+	.aside-section ul li {
+		font-size: 12px;
+	}
+
+	.title-description {
+		font-size: 12px;
+		color: $subtitle-color;
+	}
+}
