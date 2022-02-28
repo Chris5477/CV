@@ -212,19 +212,10 @@ h3 {
   /* Global CSS ********************************************************************************************************/
   .main-aside {
     width: 24%;
-    height: 100vh;
-    background-color: #0a2239;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-direction: column;
-    padding: 30px 0;
   }
 
   .main-article {
     width: 76%;
-    height: 100vh;
   }
 
   /* Header CSS ************************************************************************************************************/
@@ -232,7 +223,6 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
     height: 18vh;
   }
 
@@ -247,12 +237,9 @@ h3 {
 
   .target-job {
     font-size: 18px;
-    font-weight: bold;
-    padding-top: 10px;
   }
 
   .contact {
-    display: flex;
     flex-direction: column;
     width: 50%;
     margin-left: 0;
@@ -272,69 +259,30 @@ li {
     margin-bottom: 5px;
   }
 
-  header ul li span {
-    margin-right: 15px;
-  }
-
   /* Section Formation CSS *******************************************************************************************************/
   .section-formation,
 .section-experience {
-    width: 95%;
-    height: auto;
-    margin: auto;
     padding: 0 10px 20px 10px;
-    margin-top: 30px;
-    border-top: 1px solid black;
   }
 
   .head-section {
-    background-color: white;
     font-size: 26px;
-    display: inline-block;
-    padding: 0 15px;
-    transform: translateY(-20px);
-  }
-
-  .formation,
-.experience {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    padding-top: 15px;
-  }
-
-  .label {
-    width: 35%;
   }
 
   h3 {
-    padding-top: 10px;
-    font-size: 18px;
     font-weight: bold;
   }
 
-  .content-label {
-    width: 65%;
-    border-left: 1px solid black;
-    padding-left: 25px;
-    min-height: 90px;
-  }
-
   .content-label ul li {
-    margin: 0;
     font-size: 18px;
-    font-weight: 600;
     margin-bottom: 5px;
   }
 
   /* Aside CSS **********************************************************************************************************************/
   .profil-picture {
     width: 15%;
-    border-radius: 50%;
-    border: 4px solid white;
-    position: absolute;
     top: 3%;
-    left: 20%;
+    left: 21%;
   }
 
   .aside-section {
@@ -344,20 +292,12 @@ li {
   .description,
 .aside-section ul li {
     font-size: 16px;
-    font-weight: bold;
-    padding-bottom: 5px;
     margin-bottom: 2px;
-  }
-
-  .aside-section ul li span {
-    padding-left: 10px;
-    margin-right: 5px;
   }
 
   .title-description {
     margin-bottom: 10px;
     font-size: 18px;
-    color: #53a2be;
   }
 
   .linkedin::after {
