@@ -1,96 +1,159 @@
 @media print {
-	/*GLOBAL CSS ***********************************************************************************************/
+	/* Global CSS ********************************************************************************************************/
 
 	.main-aside {
-		width: 35%;
+		width: 24%;
+		height: 100vh;
+		background-color: $aside-color;
+		color: white;
+		@include flexbox(space-between, flex-start);
+		flex-direction: column;
+		padding: 30px 0;
 	}
 
 	.main-article {
-		width: 65%;
+		width: 76%;
 		height: 100vh;
 	}
 
 	/* Header CSS ************************************************************************************************************/
 
+	header {
+		@include flexbox(center, center);
+		width: 100%;
+		height: 18vh;
+	}
+
 	.identity {
 		width: 50%;
-		padding-left: 35px;
-	}
-
-	.contact-details {
-		width: 50%;
-	}
-
-	.contact-details li {
-		padding: 5px 0;
-		font-size: 12px;
+		padding-left: 100px;
 	}
 
 	.title-name {
-		font-size: 25px;
+		font-size: 35px;
 	}
 
 	.target-job {
-		font-size: 16px;
-		padding-right: 30px;
+		font-size: 18px;
+		font-weight: bold;
+		padding-top: 10px;
+	}
+
+	.contact {
+		display: flex;
+		flex-direction: column;
+		width: 50%;
+		margin-left: 0;
+	}
+
+	.contact-details,
+	.social-network {
+		width: 80%;
+		font-weight: bold;
+	}
+
+	.contact-details,
+	li,
+	.social-network,
+	li {
+		font-size: 14px;
+		margin-bottom: 5px;
+	}
+
+	header ul li span {
+		margin-right: 15px;
 	}
 
 	/* Section Formation CSS *******************************************************************************************************/
-
-	.head-section {
-		font-size: 25px;
-		transform: translateY(-10px);
-	}
-
 	.section-formation,
 	.section-experience {
-		padding: 0 0 0 25px;
-		margin-top: 0;
+		width: 95%;
+		height: auto;
+		margin: auto;
+		padding: 0 10px 20px 10px;
+		margin-top: 30px;
+		border-top: 1px solid black;
 	}
 
-	.section-formation {
-		margin-bottom: 50px;
+	.head-section {
+		background-color: white;
+		font-size: 26px;
+		display: inline-block;
+		padding: 0 15px;
+		transform: translateY(-20px);
 	}
-	h2 {
-		font-size: 18px;
+
+	.formation,
+	.experience {
+		@include flexbox(space-around, flex-start);
+		padding-top: 15px;
+	}
+
+	.label {
+		width: 35%;
 	}
 
 	h3 {
-		font-size: 14px;
+		padding-top: 10px;
+		font-size: 18px;
+		font-weight: bold;
 	}
 
 	.content-label {
-		font-size: 15px;
+		width: 65%;
+		border-left: 1px solid black;
+		padding-left: 25px;
+		min-height: 90px;
 	}
 
-	// ASIDE CSS **************************************************************************************************************/
+	.content-label ul li {
+		margin: 0;
+		font-size: 18px;
+		font-weight: 600;
+		margin-bottom: 5px;
+	}
+
+	/* Aside CSS **********************************************************************************************************************/
+
+	.profil-picture {
+		width: 15%;
+		border-radius: 50%;
+		border: 4px solid white;
+		position: absolute;
+		top: 3%;
+		left: 20%;
+	}
+
+	.aside-section {
+		padding: 10px 25px 10px 25px;
+	}
+
+	.description,
+	.aside-section ul li {
+		font-size: 16px;
+		font-weight: bold;
+		padding-bottom: 5px;
+		margin-bottom: 2px;
+	}
+
+	.aside-section ul li span {
+		padding-left: 10px;
+		margin-right: 5px;
+	}
 
 	.title-description {
+		margin-bottom: 10px;
 		font-size: 18px;
-	}
-
-	.aside-section ul li,
-	.description {
-		font-size: 14px;
-	}
-	img {
-		width: 55%;
-	}
-
-	a {
-		padding-bottom: 10px;
-		display: block;
+		color: $subtitle-color;
 	}
 
 	.linkedin::after {
-		content: ": https://www.linkedin.com/in/christopher-petitcolas-46410b1a9";
+		content: " : christopher petitcolas";
 	}
-
 	.github::after {
-		content: ": https://github.com/Chris5477";
+		content: " : Chris5477";
 	}
-
 	.twitter::after {
-		content: ": https://twitter.com/DevCP6";
+		content: " : DevCP6";
 	}
 }

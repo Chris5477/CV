@@ -13,11 +13,12 @@ body {
   justify-content: space-between;
   align-items: flex-start;
   flex-direction: row-reverse;
+  position: relative;
 }
 
 a {
   text-decoration: none;
-  color: white;
+  color: black;
 }
 
 li {
@@ -51,7 +52,7 @@ h2 {
 }
 /* Global CSS ********************************************************************************************************/
 .main-aside {
-  width: 25%;
+  width: 20%;
   height: 100vh;
   background-color: #0a2239;
   color: white;
@@ -59,29 +60,30 @@ h2 {
   justify-content: space-between;
   align-items: flex-start;
   flex-direction: column;
-  padding: 40px 0;
+  padding: 30px 0;
 }
 
 .main-article {
-  width: 75%;
+  width: 80%;
   height: 100vh;
 }
 
 /* Header CSS ************************************************************************************************************/
 header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   height: 23vh;
+  width: 100%;
 }
 
 .identity {
-  width: 60%;
-  padding-left: 50px;
+  width: 30%;
+  padding-left: 150px;
 }
 
 .title-name {
-  font-size: 55px;
+  font-size: 45px;
 }
 
 .target-job {
@@ -90,19 +92,32 @@ header {
   padding-top: 10px;
 }
 
+.contact {
+  display: flex;
+  width: 80%;
+  margin-left: 50px;
+}
+
 .contact-details {
-  width: 40%;
+  width: 35%;
 }
 
-.contact-details li {
-  padding: 5px 0;
+.social-network {
+  width: 65%;
+}
+
+.contact-details,
+li,
+.social-network,
+li {
   font-size: 20px;
+  margin-bottom: 9px;
+  font-weight: 600;
 }
 
-li span {
-  width: 24px;
-  height: 24px;
-  transform: translate(-10px);
+header ul li span {
+  margin-right: 15px;
+  width: 15px;
 }
 
 /* Section Formation CSS *******************************************************************************************************/
@@ -121,7 +136,7 @@ li span {
   font-size: 32px;
   display: inline-block;
   padding: 0 15px;
-  transform: translateY(-30px);
+  transform: translateY(-20px);
 }
 
 .formation,
@@ -138,33 +153,34 @@ li span {
 
 h3 {
   padding-top: 10px;
-  font-size: 20px;
+  font-size: 22px;
 }
 
 .content-label {
   width: 65%;
-  font-size: 20px;
   border-left: 1px solid black;
   padding-left: 25px;
   min-height: 90px;
 }
 
-/* Aside CSS **********************************************************************************************************************/
-.picture {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
+.content-label ul li {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 600;
 }
 
-img {
-  width: 45%;
+/* Aside CSS **********************************************************************************************************************/
+.profil-picture {
+  width: 11%;
   border-radius: 50%;
-  border: 5px solid white;
+  border: 4px solid white;
+  position: absolute;
+  top: 2%;
+  left: 15%;
 }
 
 .aside-section {
-  padding: 10px 30px;
+  padding: 10px 80px 10px 20px;
 }
 
 .description,
@@ -172,16 +188,18 @@ img {
   font-size: 18px;
   font-weight: bold;
   padding-bottom: 5px;
+  margin-bottom: 0;
 }
 
 .aside-section ul li span {
   padding-left: 10px;
   margin-right: 5px;
+  width: 35px;
 }
 
-.aside-section:nth-child(4) ul li::before {
-  content: "-";
-  margin-right: 10px;
+.logo {
+  width: 20px;
+  height: 20px;
 }
 
 .title-description {
@@ -190,345 +208,168 @@ img {
   color: #53a2be;
 }
 
-@media screen and (max-width: 798px) {
-  body {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-direction: column;
-  }
-
-  /* Global CSS ********************************************************************************************************/
-  .main-aside {
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-direction: row;
-    padding: 0;
-    order: 2;
-  }
-
-  .main-article {
-    width: 100%;
-    height: auto;
-    order: 1;
-  }
-
-  /* Header CSS ************************************************************************************************************/
-  header {
-    width: 100%;
-    height: 28vh;
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    padding-top: 5%;
-  }
-
-  .identity {
-    padding-left: 30%;
-  }
-
-  .title-name {
-    font-size: 24px;
-  }
-
-  .target-job {
-    font-size: 18px;
-  }
-
-  .contact-details li {
-    font-size: 14px;
-  }
-
-  /* Section Formation CSS *******************************************************************************************************/
-  .section-formation,
-.section-experience {
-    width: 100%;
-    height: auto;
-    margin-top: 30px;
-  }
-
-  .head-section {
-    font-size: 25px;
-    transform: translateY(-10px);
-  }
-
-  .formation,
-.experience {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    padding-top: 25px;
-  }
-
-  .label {
-    width: 35%;
-  }
-
-  h2 {
-    font-size: 18px;
-  }
-
-  h3 {
-    font-size: 16px;
-  }
-
-  .content-label {
-    font-size: 16px;
-    min-height: 90px;
-  }
-
-  /* Aside CSS **********************************************************************************************************************/
-  .picture {
-    display: inline-block;
-    position: absolute;
-    top: 0%;
-    left: 0%;
-  }
-
-  img {
-    width: 25%;
-  }
-
-  .mobile-position {
-    position: absolute;
-    top: 18%;
-    left: 2%;
-    color: #0a2239;
-  }
-
-  .aside-section {
-    padding: 10px 10px;
-  }
-
-  .description,
-.aside-section ul li {
-    font-size: 12px;
-  }
-
-  .title-description {
-    font-size: 12px;
-    color: #53a2be;
-  }
-}
-@media screen and (max-width: 650px) {
-  body {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-direction: column;
-  }
-
-  /* Global CSS ********************************************************************************************************/
-  aside.main-aside {
-    width: 100%;
-    height: auto;
-    flex-wrap: wrap;
-    padding: 0;
-  }
-
-  .main-article {
-    width: 100%;
-    height: auto;
-  }
-
-  /* Header CSS ************************************************************************************************************/
-  header {
-    width: 100%;
-    height: 20vh;
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    padding-top: 5%;
-  }
-
-  .identity {
-    padding-left: 25%;
-  }
-
-  .title-name {
-    font-size: 16px;
-  }
-
-  .target-job {
-    font-size: 14px;
-  }
-
-  .contact-details li {
-    font-size: 10px;
-    margin-left: 10px;
-    height: 25px;
-  }
-
-  li span {
-    margin: 0;
-    padding: 0;
-    width: 5px;
-  }
-
-  /* Section Formation CSS *******************************************************************************************************/
-  .section-formation,
-.section-experience {
-    width: 100%;
-    height: auto;
-    margin-top: 30px;
-  }
-
-  .head-section {
-    font-size: 25px;
-    transform: translateY(-15px);
-  }
-
-  .formation,
-.experience {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    padding-top: 25px;
-  }
-
-  .label {
-    width: 35%;
-  }
-
-  h2 {
-    font-size: 14px;
-  }
-
-  h3 {
-    font-size: 12px;
-  }
-
-  .content-label {
-    font-size: 12px;
-    min-height: 90px;
-  }
-
-  /* Aside CSS **********************************************************************************************************************/
-  .picture {
-    top: 1%;
-    left: 2%;
-  }
-
-  img {
-    width: 20%;
-  }
-
-  section.aside-section {
-    width: 33%;
-    height: 182px;
-  }
-
-  section.mobile-position {
-    top: 11%;
-    left: 2%;
-    color: #0a2239;
-    width: 100%;
-  }
-
-  .description,
-.aside-section ul li {
-    font-size: 12px;
-  }
-
-  .title-description {
-    font-size: 12px;
-    color: #53a2be;
-  }
-}
 @media print {
-  /*GLOBAL CSS ***********************************************************************************************/
+  /* Global CSS ********************************************************************************************************/
   .main-aside {
-    width: 35%;
+    width: 24%;
+    height: 100vh;
+    background-color: #0a2239;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 30px 0;
   }
 
   .main-article {
-    width: 65%;
+    width: 76%;
     height: 100vh;
   }
 
   /* Header CSS ************************************************************************************************************/
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 18vh;
+  }
+
   .identity {
     width: 50%;
-    padding-left: 35px;
-  }
-
-  .contact-details {
-    width: 50%;
-  }
-
-  .contact-details li {
-    padding: 5px 0;
-    font-size: 12px;
+    padding-left: 100px;
   }
 
   .title-name {
-    font-size: 25px;
+    font-size: 35px;
   }
 
   .target-job {
-    font-size: 16px;
-    padding-right: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 10px;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-left: 0;
+  }
+
+  .contact-details,
+.social-network {
+    width: 80%;
+    font-weight: bold;
+  }
+
+  .contact-details,
+li,
+.social-network,
+li {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+
+  header ul li span {
+    margin-right: 15px;
   }
 
   /* Section Formation CSS *******************************************************************************************************/
-  .head-section {
-    font-size: 25px;
-    transform: translateY(-10px);
-  }
-
   .section-formation,
 .section-experience {
-    padding: 0 0 0 25px;
-    margin-top: 0;
+    width: 95%;
+    height: auto;
+    margin: auto;
+    padding: 0 10px 20px 10px;
+    margin-top: 30px;
+    border-top: 1px solid black;
   }
 
-  .section-formation {
-    margin-bottom: 50px;
+  .head-section {
+    background-color: white;
+    font-size: 26px;
+    display: inline-block;
+    padding: 0 15px;
+    transform: translateY(-20px);
   }
 
-  h2 {
-    font-size: 18px;
+  .formation,
+.experience {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-top: 15px;
+  }
+
+  .label {
+    width: 35%;
   }
 
   h3 {
-    font-size: 14px;
+    padding-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
   }
 
   .content-label {
-    font-size: 15px;
+    width: 65%;
+    border-left: 1px solid black;
+    padding-left: 25px;
+    min-height: 90px;
+  }
+
+  .content-label ul li {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+
+  /* Aside CSS **********************************************************************************************************************/
+  .profil-picture {
+    width: 15%;
+    border-radius: 50%;
+    border: 4px solid white;
+    position: absolute;
+    top: 3%;
+    left: 20%;
+  }
+
+  .aside-section {
+    padding: 10px 25px 10px 25px;
+  }
+
+  .description,
+.aside-section ul li {
+    font-size: 16px;
+    font-weight: bold;
+    padding-bottom: 5px;
+    margin-bottom: 2px;
+  }
+
+  .aside-section ul li span {
+    padding-left: 10px;
+    margin-right: 5px;
   }
 
   .title-description {
+    margin-bottom: 10px;
     font-size: 18px;
-  }
-
-  .aside-section ul li,
-.description {
-    font-size: 14px;
-  }
-
-  img {
-    width: 55%;
-  }
-
-  a {
-    padding-bottom: 10px;
-    display: block;
+    color: #53a2be;
   }
 
   .linkedin::after {
-    content: ": https://www.linkedin.com/in/christopher-petitcolas-46410b1a9";
+    content: " : christopher petitcolas";
   }
 
   .github::after {
-    content: ": https://github.com/Chris5477";
+    content: " : Chris5477";
   }
 
   .twitter::after {
-    content: ": https://twitter.com/DevCP6";
+    content: " : DevCP6";
   }
 }
 

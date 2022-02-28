@@ -1,34 +1,35 @@
 /* Global CSS ********************************************************************************************************/
 
 .main-aside {
-	width: 25%;
+	width: 20%;
 	height: 100vh;
 	background-color: $aside-color;
 	color: white;
 	@include flexbox(space-between, flex-start);
 	flex-direction: column;
-	padding: 40px 0;
+	padding: 30px 0;
 }
 
 .main-article {
-	width: 75%;
+	width: 80%;
 	height: 100vh;
 }
 
 /* Header CSS ************************************************************************************************************/
 
 header {
-	@include flexbox(space-around, center);
+	@include flexbox(space-between, center);
 	height: 23vh;
+	width: 100%;
 }
 
 .identity {
-	width: 60%;
-	padding-left: 50px;
+	width: 30%;
+	padding-left: 150px;
 }
 
 .title-name {
-	font-size: 55px;
+	font-size: 45px;
 }
 
 .target-job {
@@ -37,19 +38,31 @@ header {
 	padding-top: 10px;
 }
 
+.contact {
+	display: flex;
+	width: 80%;
+	margin-left: 50px;
+}
+
 .contact-details {
-	width: 40%;
+	width: 35%;
 }
 
-.contact-details li {
-	padding: 5px 0;
+.social-network {
+	width: 65%;
+}
+.contact-details,
+li,
+.social-network,
+li {
 	font-size: 20px;
+	margin-bottom: 9px;
+	font-weight: 600;
 }
 
-li span {
-	width: 24px;
-	height: 24px;
-	transform: translate(-10px);
+header ul li span {
+	margin-right: 15px;
+	width: 15px;
 }
 
 /* Section Formation CSS *******************************************************************************************************/
@@ -68,7 +81,7 @@ li span {
 	font-size: 32px;
 	display: inline-block;
 	padding: 0 15px;
-	transform: translateY(-30px);
+	transform: translateY(-20px);
 }
 
 .formation,
@@ -83,32 +96,35 @@ li span {
 
 h3 {
 	padding-top: 10px;
-	font-size: 20px;
+	font-size: 22px;
 }
 
 .content-label {
 	width: 65%;
-	font-size: 20px;
 	border-left: 1px solid black;
 	padding-left: 25px;
 	min-height: 90px;
 }
 
-/* Aside CSS **********************************************************************************************************************/
-
-.picture {
-	@include flexbox(center, center);
-	width: 100%;
+.content-label ul li {
+	margin: 0;
+	font-size: 22px;
+	font-weight: 600;
 }
 
-img {
-	width: 45%;
+/* Aside CSS **********************************************************************************************************************/
+
+.profil-picture {
+	width: 11%;
 	border-radius: 50%;
-	border: 5px solid white;
+	border: 4px solid white;
+	position: absolute;
+	top: 2%;
+	left: 15%;
 }
 
 .aside-section {
-	padding: 10px 30px;
+	padding: 10px 80px 10px 20px;
 }
 
 .description,
@@ -116,16 +132,18 @@ img {
 	font-size: 18px;
 	font-weight: bold;
 	padding-bottom: 5px;
+	margin-bottom: 0;
 }
 
 .aside-section ul li span {
 	padding-left: 10px;
 	margin-right: 5px;
+	width: 35px;
 }
 
-.aside-section:nth-child(4) ul li::before {
-	content: "-";
-	margin-right: 10px;
+.logo {
+	width: 20px;
+	height: 20px;
 }
 
 .title-description {

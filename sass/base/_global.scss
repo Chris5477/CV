@@ -11,11 +11,12 @@ body {
 	margin: auto;
 	@include flexbox(space-between, flex-start);
 	flex-direction: row-reverse;
+	position: relative;
 }
 
 a {
 	text-decoration: none;
-	color: white;
+	color: black;
 }
 
 li {
