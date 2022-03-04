@@ -99,11 +99,11 @@ header {
 }
 
 .contact-details {
-  width: 35%;
+  width: 55%;
 }
 
 .social-network {
-  width: 65%;
+  width: 40%;
 }
 
 .contact-details,
@@ -165,7 +165,7 @@ h3 {
 
 .content-label ul li {
   margin: 0;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 600;
 }
 
@@ -185,7 +185,7 @@ h3 {
 
 .description,
 .aside-section ul li {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
   padding-bottom: 5px;
   margin-bottom: 0;
@@ -232,7 +232,7 @@ h3 {
   }
 
   .title-name {
-    font-size: 35px;
+    font-size: 32px;
   }
 
   .target-job {
@@ -242,13 +242,14 @@ h3 {
   .contact {
     flex-direction: column;
     width: 50%;
-    margin-left: 0;
+    margin-left: 10px;
+    margin-top: 20px;
   }
 
   .contact-details,
 .social-network {
-    width: 80%;
-    font-weight: bold;
+    width: 100%;
+    font-weight: 400;
   }
 
   .contact-details,
@@ -269,12 +270,17 @@ li {
     font-size: 26px;
   }
 
+  .label h2 {
+    font-size: 22px;
+  }
+
   h3 {
     font-weight: bold;
+    font-size: 16px;
   }
 
   .content-label ul li {
-    font-size: 18px;
+    font-size: 16px;
     margin-bottom: 5px;
   }
 
