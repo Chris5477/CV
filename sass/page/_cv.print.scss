@@ -19,14 +19,13 @@
 	.identity {
 		width: 50%;
 		padding-left: 100px;
-	}
+		.title-name {
+			font-size: 32px;
+		}
 
-	.title-name {
-		font-size: 32px;
-	}
-
-	.target-job {
-		font-size: 18px;
+		.target-job {
+			font-size: 18px;
+		}
 	}
 
 	.contact {
@@ -60,13 +59,14 @@
 		font-size: 26px;
 	}
 
-	.label h2{
-		font-size: 22px;
-	}
-
-	h3 {
-		font-weight: bold;
-		font-size: 16px;
+	.label {
+		h2 {
+			font-size: 22px;
+		}
+		h3 {
+			font-weight: bold;
+			font-size: 16px;
+		}
 	}
 
 	.content-label ul li {
@@ -84,17 +84,16 @@
 
 	.aside-section {
 		padding: 10px 25px 10px 25px;
+		.title-description {
+			margin-bottom: 10px;
+			font-size: 18px;
+		}
 	}
 
 	.description,
 	.aside-section ul li {
 		font-size: 16px;
 		margin-bottom: 2px;
-	}
-
-	.title-description {
-		margin-bottom: 10px;
-		font-size: 18px;
 	}
 
 	.linkedin::after {

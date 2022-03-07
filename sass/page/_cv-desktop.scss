@@ -21,21 +21,24 @@ header {
 	@include flexbox(space-between, center);
 	height: 23vh;
 	width: 100%;
+	span {
+		margin-right: 15px;
+		width: 15px;
+	}
 }
 
 .identity {
 	width: 30%;
 	padding-left: 150px;
-}
+	.title-name {
+		font-size: 45px;
+	}
 
-.title-name {
-	font-size: 45px;
-}
-
-.target-job {
-	font-size: 22px;
-	font-weight: bold;
-	padding-top: 10px;
+	.target-job {
+		font-size: 22px;
+		font-weight: bold;
+		padding-top: 10px;
+	}
 }
 
 .contact {
@@ -43,7 +46,6 @@ header {
 	width: 80%;
 	margin-left: 50px;
 }
-
 .contact-details {
 	width: 55%;
 }
@@ -58,11 +60,6 @@ li {
 	font-size: 20px;
 	margin-bottom: 9px;
 	font-weight: 600;
-}
-
-header ul li span {
-	margin-right: 15px;
-	width: 15px;
 }
 
 /* Section Formation CSS *******************************************************************************************************/
@@ -92,11 +89,10 @@ header ul li span {
 
 .label {
 	width: 35%;
-}
-
-h3 {
-	padding-top: 10px;
-	font-size: 22px;
+	h3 {
+		padding-top: 10px;
+		font-size: 22px;
+	}
 }
 
 .content-label {
@@ -125,6 +121,11 @@ h3 {
 
 .aside-section {
 	padding: 10px 80px 10px 20px;
+	ul li span {
+		padding-left: 10px;
+		margin-right: 5px;
+		width: 35px;
+	}
 }
 
 .description,
@@ -133,17 +134,10 @@ h3 {
 	font-weight: bold;
 	padding-bottom: 5px;
 	margin-bottom: 0;
-}
-
-.aside-section ul li span {
-	padding-left: 10px;
-	margin-right: 5px;
-	width: 35px;
-}
-
-.logo {
-	width: 20px;
-	height: 20px;
+	.logo {
+		width: 20px;
+		height: 20px;
+	}
 }
 
 .title-description {
