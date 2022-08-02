@@ -68,8 +68,8 @@ li {
 	width: 95%;
 	height: auto;
 	margin: auto;
-	padding: 0 20px 18px 20px;
-	margin-top: 30px;
+	padding: 0 20px 10px 20px;
+	margin-top: 10px;
 	border-top: 1px solid black;
 }
 
@@ -84,14 +84,16 @@ li {
 .formation,
 .experience {
 	@include flexbox(space-around, flex-start);
-	padding-top: 15px;
+	padding-top: 6px;
+	margin-bottom: 5px;
 }
 
 .label {
 	width: 35%;
+	
 	h3 {
 		padding-top: 10px;
-		font-size: 22px;
+		font-size: 17px;
 	}
 }
 
@@ -99,12 +101,12 @@ li {
 	width: 65%;
 	border-left: 1px solid black;
 	padding-left: 25px;
-	min-height: 90px;
+	min-height: auto
 }
 
 .content-label ul li {
 	margin: 0;
-	font-size: 17px;
+	font-size: 16px;
 	font-weight: 600;
 }
 

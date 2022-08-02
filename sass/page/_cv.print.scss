@@ -55,17 +55,22 @@
 		padding: 0 10px 20px 10px;
 	}
 
+	.formation{
+		margin-bottom: 5px;
+	}
+
 	.head-section {
 		font-size: 25px;
 	}
 
 	.label {
 		h2 {
-			font-size: 24px;
+			font-size: 20px;
 		}
 		h3 {
 			font-weight: bold;
-			font-size: 20px;
+			font-size: 18px;
+			padding-right: 5px;
 		}
 	}
 
@@ -104,5 +109,9 @@
 	}
 	.twitter::after {
 		content: " : DevCP6";
+	}
+	.portfolio::after {
+		content: " : https://chris5477.github.io/mon-portfolio";
+		font-size: 12px;
 	}
 }
