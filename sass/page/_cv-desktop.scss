@@ -31,11 +31,11 @@ header {
 	width: 30%;
 	padding-left: 150px;
 	.title-name {
-		font-size: 45px;
+		font-size: 40px;
 	}
 
 	.target-job {
-		font-size: 20px;
+		font-size: 18px;
 		font-weight: bold;
 		padding-top: 5px;
 	}
@@ -75,7 +75,7 @@ li {
 
 .head-section {
 	background-color: white;
-	font-size: 30px;
+	font-size: 28px;
 	display: inline-block;
 	padding: 0 15px;
 	transform: translateY(-20px);
@@ -86,6 +86,10 @@ li {
 	@include flexbox(space-around, flex-start);
 	padding-top: 6px;
 	margin-bottom: 5px;
+}
+
+.formation h2{
+	font-size: 22px;
 }
 
 .label {
@@ -106,7 +110,7 @@ li {
 
 .content-label ul li {
 	margin: 0;
-	font-size: 16px;
+	font-size: 15px;
 	font-weight: 600;
 }
 
@@ -132,18 +136,21 @@ li {
 
 .description,
 .aside-section ul li {
-	font-size: 16px;
+	@include flexbox(flex-start,center);
+	font-size: 14px;
+	line-height: 14px;
 	font-weight: bold;
 	padding-bottom: 5px;
 	margin-bottom: 0;
 	.logo {
 		width: 20px;
 		height: 20px;
+		margin: 0 10px;
 	}
 }
 
 .title-description {
 	margin-bottom: 10px;
-	font-size: 22px;
+	font-size: 20px;
 	color: $subtitle-color;
 }
