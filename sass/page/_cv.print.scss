@@ -20,11 +20,11 @@
 		width: 50%;
 		padding-left: 100px;
 		.title-name {
-			font-size: 27px;
+			font-size: 26px;
 		}
 
 		.target-job {
-			font-size: 16px;
+			font-size: 17px;
 		}
 	}
 
@@ -60,12 +60,12 @@
 	}
 
 	.head-section {
-		font-size: 22px;
+		font-size: 20px;
 	}
 
 	.label {
 		h2 {
-			font-size: 17px;
+			font-size: 18px;
 		}
 		h3 {
 			font-weight: bold;
@@ -76,7 +76,7 @@
 
 	.content-label ul li {
 		font-size: 14px;
-		margin-bottom: 5px;
+		margin-bottom: 3px;
 	}
 
 	/* Aside CSS **********************************************************************************************************************/
@@ -97,7 +97,7 @@
 
 	.description,
 	.aside-section ul li {
-		font-size: 16px;
+		font-size: 14px;
 		margin-bottom: 2px;
 	}
 
@@ -112,6 +112,6 @@
 	}
 	.portfolio::after {
 		content: " : https://chris5477.github.io/mon-portfolio";
-		font-size: 12px;
+		font-size: 11px;
 	}
 }
